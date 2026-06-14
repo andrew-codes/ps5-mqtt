@@ -1,0 +1,46 @@
+{
+  "name": "@andrew-codes/ps5-mqtt",
+  "version": "0.1.0",
+  "author": {
+    "name": "Andrew Smith",
+    "url": "https://andrew.codes"
+  },
+  "workspaces": [
+    "ps5-mqtt/dev-services",
+    "ps5-mqtt/server",
+    "ps5-mqtt/client"
+  ],
+  "private": true,
+  "engines": {
+    "node": "24.16.0"
+  },
+  "scripts": {
+    "build": "yarn workspaces foreach -A run build",
+    "bump-version": "tsx scripts/bump-version.ts",
+    "clean": "yarn workspaces foreach -A run clean",
+    "format": "prettier --write .",
+    "format/check": "prettier --check .",
+    "lint": "eslint . --ext .ts,.js,.cjs,.mjs",
+    "start": "bash scripts/start.sh",
+    "test/unit": "yarn workspaces foreach -A run test/unit",
+    "typecheck": "tsc -p tsconfig.json && yarn workspaces foreach -A run typecheck",
+    "update-changelog": "tsx scripts/update-changelog.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.13",
+    "@types/semver": "^7.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.31.8",
+    "prettier": "^3.8.4",
+    "rimraf": "^5.0.10",
+    "semver": "^7.8.4",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "packageManager": "yarn@4.16.0"
+}
