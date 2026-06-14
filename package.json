@@ -1,0 +1,44 @@
+{
+  "name": "@andrew-codes/ps5-mqtt",
+  "version": "0.1.0",
+  "workspaces": [
+    "ps5-mqtt/server",
+    "ps5-mqtt/client"
+  ],
+  "private": true,
+  "engines": {
+    "node": "24.16.0"
+  },
+  "scripts": {
+    "build": "yarn workspaces foreach -A run build",
+    "typecheck": "tsc -p tsconfig.json && yarn workspaces foreach -A run typecheck",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.js,.cjs,.mjs",
+    "bump-version": "tsx scripts/bump-version.ts",
+    "update-changelog": "tsx scripts/update-changelog.ts",
+    "format": "prettier --write .",
+    "format/check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@jest/globals": "29.3.1",
+    "@types/jest": "^29.2.2",
+    "@types/node": "^18.11.13",
+    "@types/semver": "^7.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.31.8",
+    "jest": "^29.3.0",
+    "jest-util": "^29.7.0",
+    "prettier": "^3.8.4",
+    "redux-saga-testing": "^2.0.2",
+    "semver": "^7.8.4",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "packageManager": "yarn@4.16.0"
+}

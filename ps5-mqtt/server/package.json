@@ -1,5 +1,5 @@
 {
-  "name": "@ps5-mqtt/server",
+  "name": "@andrew-codes/ps5-mqtt-server",
   "version": "0.5.0",
   "private": true,
   "license": "MIT",
@@ -9,7 +9,7 @@
     "build": "tsc -p ./tsconfig.build.json",
     "watch": "tsc --watch -p ./tsconfig.build.json",
     "start": "node dist/index.js",
-    "lint": "eslint . --ext .ts"
+    "typecheck": "tsc --noEmit -p ./tsconfig.build.json"
   },
   "author": "",
   "dependencies": {
@@ -35,6 +35,7 @@
     "@types/node-fetch": "^2.6.2",
     "@types/shelljs": "^0.8.11",
     "dotenv": "^16.0.3",
-    "typescript": "^4.9.5"
+    "tslib": "^2.6.2",
+    "typescript": "^6.0.3"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "types": ["node", "jest"]
+  },
+  "include": ["ps5-mqtt/**/*.test.ts"],
+  "exclude": ["node_modules", "dist"]
+}

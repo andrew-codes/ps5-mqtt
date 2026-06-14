@@ -28,4 +28,4 @@ if [ ! -z $(bashio::config 'logger') ]; then
 fi
 
 echo Starting PS5-MQTT...
-node app/server/dist/index.js
+node app/ps5-mqtt/server/dist/index.js
