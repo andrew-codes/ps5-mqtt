@@ -24,15 +24,20 @@ jobs:
         with:
           ref: main
 
-      - name: ⏭ Copy DOCS to add-on
-        run: cp docs/DOCS.md add-ons/ps5-mqtt-edge/DOCS.md
+      - name: ⏭ Copy README & DOCS to add-on
+        run: |
+          cp README.md add-ons/ps5-mqtt-edge/README.md
+          cp docs/DOCS.md add-ons/ps5-mqtt-edge/DOCS.md
+          sed -i 's#./add-ons/ps5-mqtt/DOCS.md#./add-ons/ps5-mqtt-edge/DOCS.md#' add-ons/ps5-mqtt-edge/README.md
+          sed -i 's#./add-ons/ps5-mqtt/logo.png#./add-ons/ps5-mqtt-edge/logo.png#' add-ons/ps5-mqtt-edge/README.md
+          sed -i 's#github.com%2Fandrew-codes%2Fps5-mqtt)#github.com%2Fandrew-codes%2Fps5-mqtt-edge)#' add-ons/ps5-mqtt-edge/README.md
 
-      - name: 🙌 Commit DOCS
+      - name: 🙌 Commit README & DOCS
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: main
           commit_message: "⏭ Sync edge add-on docs [skip ci]"
-          file_pattern: add-ons/ps5-mqtt-edge/DOCS.md
+          file_pattern: add-ons/ps5-mqtt-edge/README.md add-ons/ps5-mqtt-edge/DOCS.md
 
   information:
     name: ℹ Gather add-on information
@@ -255,7 +260,7 @@ jobs:
         env:
           REGISTRY: ghcr.io
           OWNER: ${{ github.repository_owner }}
-          IMAGE: ps5-mqtt-edge
+          IMAGE: ps5-mqtt
           TAGS: "dev ${{ github.sha }}"
           PLATFORMS: linux/amd64,linux/arm64
           SKIP_BUILD: "1"

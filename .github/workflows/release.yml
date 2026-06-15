@@ -53,7 +53,9 @@ jobs:
         run: yarn bump-version ${{ inputs.releaseType }}
 
       - name: ⏭ Sync add-on docs
-        run: cp docs/DOCS.md add-ons/ps5-mqtt/DOCS.md
+        run: |
+          cp README.md add-ons/ps5-mqtt/README.md
+          cp docs/DOCS.md add-ons/ps5-mqtt/DOCS.md
 
       - name: 🙌 Commit version bump
         uses: stefanzweifel/git-auto-commit-action@v5
