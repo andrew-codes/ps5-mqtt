@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@andrew-codes/ps5-mqtt", "workspace:."],\
-          ["@types/node", "npm:18.19.130"],\
+          ["@types/node", "npm:24.13.2"],\
           ["@types/semver", "npm:7.7.1"],\
           ["@typescript-eslint/eslint-plugin", "virtual:a0e4acd966998268124abd0d2a054d04112aedaf57311eaa759a4b704ddc22c4603fa3ccb9fb99eef2447945ac06148b21c74cd6492bcef454737956c8ee61a8#npm:5.62.0"],\
           ["@typescript-eslint/parser", "virtual:a0e4acd966998268124abd0d2a054d04112aedaf57311eaa759a4b704ddc22c4603fa3ccb9fb99eef2447945ac06148b21c74cd6492bcef454737956c8ee61a8#npm:5.62.0"],\
@@ -67,7 +67,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@andrew-codes/ps5-mqtt", "workspace:."],\
-          ["@types/node", "npm:18.19.130"],\
+          ["@types/node", "npm:24.13.2"],\
           ["@types/semver", "npm:7.7.1"],\
           ["@typescript-eslint/eslint-plugin", "virtual:a0e4acd966998268124abd0d2a054d04112aedaf57311eaa759a4b704ddc22c4603fa3ccb9fb99eef2447945ac06148b21c74cd6492bcef454737956c8ee61a8#npm:5.62.0"],\
           ["@typescript-eslint/parser", "virtual:a0e4acd966998268124abd0d2a054d04112aedaf57311eaa759a4b704ddc22c4603fa3ccb9fb99eef2447945ac06148b21c74cd6492bcef454737956c8ee61a8#npm:5.62.0"],\
@@ -94,7 +94,7 @@ const RAW_RUNTIME_STATE =
           ["@rspack/core", "virtual:b38d6b701e4caa326572396318d0cbf32d81f07765ac040d1cd6a41fe80c7bdf0625e7ff595bd03dc0a70ded5199973c1f0eff6ddfe72b2ec6c5055b7aa1c963#npm:2.0.8"],\
           ["@rspack/dev-server", "virtual:b38d6b701e4caa326572396318d0cbf32d81f07765ac040d1cd6a41fe80c7bdf0625e7ff595bd03dc0a70ded5199973c1f0eff6ddfe72b2ec6c5055b7aa1c963#npm:2.0.3"],\
           ["@rspack/plugin-react-refresh", "virtual:b38d6b701e4caa326572396318d0cbf32d81f07765ac040d1cd6a41fe80c7bdf0625e7ff595bd03dc0a70ded5199973c1f0eff6ddfe72b2ec6c5055b7aa1c963#npm:2.0.2"],\
-          ["@types/node", "npm:18.19.130"],\
+          ["@types/node", "npm:24.13.2"],\
           ["@types/react", "npm:18.3.31"],\
           ["@types/react-dom", "virtual:b38d6b701e4caa326572396318d0cbf32d81f07765ac040d1cd6a41fe80c7bdf0625e7ff595bd03dc0a70ded5199973c1f0eff6ddfe72b2ec6c5055b7aa1c963#npm:18.3.7"],\
           ["grommet", "virtual:b38d6b701e4caa326572396318d0cbf32d81f07765ac040d1cd6a41fe80c7bdf0625e7ff595bd03dc0a70ded5199973c1f0eff6ddfe72b2ec6c5055b7aa1c963#npm:2.55.0"],\
@@ -133,7 +133,7 @@ const RAW_RUNTIME_STATE =
           ["@types/express", "npm:4.17.25"],\
           ["@types/jest", "npm:29.5.14"],\
           ["@types/lodash", "npm:4.17.24"],\
-          ["@types/node", "npm:18.19.130"],\
+          ["@types/node", "npm:24.13.2"],\
           ["@types/node-fetch", "npm:2.6.13"],\
           ["@types/shelljs", "npm:0.8.17"],\
           ["async-mqtt", "npm:2.6.3"],\
@@ -2564,11 +2564,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:18.19.130", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-18.19.130-df6d3a4ff9-22ba2bc9f8.zip/node_modules/@types/node/",\
+      ["npm:24.13.2", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-24.13.2-785822bd87-d7d48a88a4.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:18.19.130"],\
-          ["undici-types", "npm:5.26.5"]\
+          ["@types/node", "npm:24.13.2"],\
+          ["undici-types", "npm:7.18.2"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -9422,7 +9422,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.11"],\
           ["@tsconfig/node14", "npm:1.0.3"],\
           ["@tsconfig/node16", "npm:1.0.4"],\
-          ["@types/node", "npm:18.19.130"],\
+          ["@types/node", "npm:24.13.2"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
@@ -9682,10 +9682,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici-types", [\
-      ["npm:5.26.5", {\
-        "packageLocation": "./.yarn/cache/undici-types-npm-5.26.5-de4f7c7bb9-bb673d7876.zip/node_modules/undici-types/",\
+      ["npm:7.18.2", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-7.18.2-3e6d69d829-85a7918911.zip/node_modules/undici-types/",\
         "packageDependencies": [\
-          ["undici-types", "npm:5.26.5"]\
+          ["undici-types", "npm:7.18.2"]\
         ],\
         "linkType": "HARD"\
       }],\

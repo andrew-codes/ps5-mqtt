@@ -27,7 +27,7 @@
     "update-changelog": "tsx scripts/update-changelog.ts"
   },
   "devDependencies": {
-    "@types/node": "^18.11.13",
+    "@types/node": "^24.0.0",
     "@types/semver": "^7.7.1",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.40.1",
