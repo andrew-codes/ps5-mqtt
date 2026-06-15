@@ -100,7 +100,7 @@ export async function run() {
     createDebugger("@ha:ps5-sensitive:registered-accounts")(accounts)
     const store = configureStore({
       reducer,
-      middleware: [sagaMiddleware],
+      middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),
       preloadedState: {
         devices: {},
         accounts: accounts,
