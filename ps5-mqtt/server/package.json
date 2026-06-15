@@ -40,7 +40,7 @@
     "@types/express": "^4.17.25",
     "@types/jest": "^30.0.0",
     "@types/lodash": "^4.17.24",
-    "@types/node": "^24.13.2",
+    "@types/node": "^25.9.3",
     "@types/shelljs": "^0.10.0",
     "concurrently": "^10.0.3",
     "dotenv": "^17.4.2",
