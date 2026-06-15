@@ -13,9 +13,6 @@ ENV LANG=C.UTF-8
 
 RUN apk add --no-cache nodejs npm
 
-# playactor is invoked as a CLI binary (via shell) by the redux sagas, so it
-# must also be installed globally and available on PATH.
-RUN npm i -g playactor
 RUN mkdir -p ~/.config/playactor
 
 # Copy the packaged application tree (.packaged/... -> /app/ps5-mqtt/...).
@@ -23,6 +20,11 @@ COPY .packaged/ /app/ps5-mqtt/
 
 RUN cd /app/ps5-mqtt/server && \
     npm install --omit=dev --omit=optional
+
+# playactor is invoked as a CLI binary (via shell) by the redux sagas. It's
+# already a dependency, so just put its local bin on PATH instead of
+# installing it again globally.
+ENV PATH="/app/ps5-mqtt/server/node_modules/.bin:${PATH}"
 
 RUN chmod a+x /app/ps5-mqtt/run.sh
 
