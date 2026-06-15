@@ -72,7 +72,7 @@ function getJsonConfig(configPath: string | undefined): Partial<AppConfig> {
     const options: AppConfig = JSON.parse(optionsRaw)
     return options
   } catch (err) {
-    logError(`Received invalid options: "${optionsRaw}".`)
+    logError(`Received invalid options: "${optionsRaw}".`, err)
     return {}
   }
 }

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
 import { runSaga } from "redux-saga"
 
 import { PsnAccount } from "../../../psn-account"

@@ -16,7 +16,7 @@ function* updateAccount({ payload: account }: UpdateAccountAction) {
       account.preferredDevices.ps5 !== undefined ||
       account.preferredDevices.ps4 !== undefined
     ) {
-      devices.sort((a, _b) => {
+      devices.sort((a) => {
         if (
           a.id === account.preferredDevices.ps5 ||
           a.id === account.preferredDevices.ps4
