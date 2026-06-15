@@ -90,7 +90,6 @@ Users can now specify the preferred console per account. This is useful when, fo
   npsso: "!secret my_npsso"
   preferred_ps5: 70C881D600B0 # ID of the PS5 that will be preferred when activity can be matched to multiple PS5's
   preferred_ps4: 60E899D600B0 # ID of the PS4 that will be preferred when activity can be matched to multiple PS4's
-
 ```
 
 You can find the ID of your PlayStation device by:

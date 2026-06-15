@@ -159,8 +159,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       ...ps5Device1,
@@ -244,8 +245,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       ...ps5Device2,
@@ -329,8 +331,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       ...ps5Device1,
@@ -412,8 +415,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       ...ps5Device2,
@@ -497,8 +501,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       address: { address: "192.168.0.10", port: 80 },
@@ -614,8 +619,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       ...mockDevice1,
@@ -715,8 +721,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       address: { address: "192.168.0.10", port: 80 },
@@ -796,8 +803,9 @@ describe("Check PSN Presence saga", () => {
       },
     ).toPromise()
 
-    const mockedUpdateHa =
-      jest.requireMock("../../action-creators").updateHomeAssistant
+    const mockedUpdateHa = jest.requireMock(
+      "../../action-creators",
+    ).updateHomeAssistant
 
     expect(mockedUpdateHa).toHaveBeenCalledWith(<Device>{
       address: { address: "192.168.0.10", port: 80 },

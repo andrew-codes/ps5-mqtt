@@ -25,7 +25,9 @@ const debugMqtt = createDebugger("@ha:ps5:mqtt")
 const debugState = createDebugger("@ha:state")
 const logError = createErrorLogger()
 
-const createMqtt = async (appConfig: AppConfig): Promise<MQTT.AsyncMqttClient> => {
+const createMqtt = async (
+  appConfig: AppConfig,
+): Promise<MQTT.AsyncMqttClient> => {
   return await MQTT.connectAsync(`mqtt://${appConfig.mqtt.host}`, {
     password: appConfig.mqtt.pass,
     port: parseInt(appConfig.mqtt.port || "1883", 10),
@@ -100,7 +102,8 @@ export async function run() {
     createDebugger("@ha:ps5-sensitive:registered-accounts")(accounts)
     const store = configureStore({
       reducer,
-      middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),
+      middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware().concat(sagaMiddleware),
       preloadedState: {
         devices: {},
         accounts: accounts,

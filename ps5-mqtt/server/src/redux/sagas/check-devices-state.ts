@@ -24,7 +24,7 @@ function* checkDevicesState() {
       )
 
       if (code > 1 && stderr) {
-          throw new Error(stderr)
+        throw new Error(stderr)
       }
 
       if (!stdout) {

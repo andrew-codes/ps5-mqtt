@@ -136,8 +136,7 @@ async function getAccountActivity({
         `Unable to retrieve PSN information. API response: "${response.status}:${response.statusText}"`,
       )
     } else {
-      const { basicPresence } =
-        (await response.json()) as BasicPresenceResponse
+      const { basicPresence } = (await response.json()) as BasicPresenceResponse
 
       if (basicPresence?.gameTitleInfoList?.length > 0) {
         const [activeTitle] = basicPresence.gameTitleInfoList
