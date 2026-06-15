@@ -60,10 +60,6 @@ If you enjoy the project, please consider sponsoring further development! 💕
 
 <a href="https://github.com/sponsors/andrew-codes" target="_blank"><img src="https://img.shields.io/badge/Sponsor%20on%20GitHub-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub" style="height: 60px !important;" ></a>
 
-## Example usage
-
-![image](https://user-images.githubusercontent.com/4623715/184224674-97c167f6-44bc-463a-a573-3a47b5eaefc8.png)
-
 ## FAQ
 
 ### The log is showing 403 errors when I try to turn my ps5 on or off!
@@ -77,10 +73,6 @@ Double check that you've enabled all required remote play features [as described
 ### Why does this add-on only support Awake/Standby on Playstation 4?
 
 There already is a great [Home Assistant integration][ha-ps4] that supports more functionality for PS4 devices like starting games. However, users have reported that this add-on detects Awake/Standby changes faster than the existing integration. So if you want you can use this add-on next to the existing integration or instead of it, if you are only interested in Standby/Awake.
-
-### Can I get the yaml code for button in the [example image](#example-usage)?
-
-**No.** I based my personal custom button cards on [this project][matt8707-dash]. _But_ I _heavily_ modified them and added loads of custom stuff that is not suitable for sharing at this time as it will likely raise more questions than provide answers.
 
 ## Thanks & Credits
 
