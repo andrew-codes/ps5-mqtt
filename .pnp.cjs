@@ -136,7 +136,6 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:30.0.0"],\
           ["@types/lodash", "npm:4.17.24"],\
           ["@types/node", "npm:24.13.2"],\
-          ["@types/node-fetch", "npm:2.6.13"],\
           ["@types/shelljs", "npm:0.10.0"],\
           ["async-mqtt", "npm:2.6.3"],\
           ["body-parser", "npm:2.2.2"],\
@@ -148,7 +147,6 @@ const RAW_RUNTIME_STATE =
           ["jest-util", "npm:30.4.1"],\
           ["lodash", "npm:4.18.1"],\
           ["mqtt", "npm:4.3.8"],\
-          ["node-fetch", "virtual:001a51c96ce37a97cf30fc526c6f9fb47f465af86bde09772059c3ed8c47512dac2528879b10b46a196f19ffb613ae2a7fc96758c4dd43cdcc1260aceb7e1779#npm:2.7.0"],\
           ["nodemon", "npm:3.1.14"],\
           ["playactor", "npm:0.4.1"],\
           ["psn-api", "npm:2.18.0"],\
@@ -2692,17 +2690,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@types/node-fetch", [\
-      ["npm:2.6.13", {\
-        "packageLocation": "./.yarn/cache/@types-node-fetch-npm-2.6.13-eb2c52495a-6313c89f62.zip/node_modules/@types/node-fetch/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:25.9.3"],\
-          ["@types/node-fetch", "npm:2.6.13"],\
-          ["form-data", "npm:4.0.6"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@types/prop-types", [\
       ["npm:15.7.15", {\
         "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.15-cefe16a1fa-b59aad1ad1.zip/node_modules/@types/prop-types/",\
@@ -3614,15 +3601,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["asynckit", [\
-      ["npm:0.4.0", {\
-        "packageLocation": "./.yarn/cache/asynckit-npm-0.4.0-c718858525-d73e2ddf20.zip/node_modules/asynckit/",\
-        "packageDependencies": [\
-          ["asynckit", "npm:0.4.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["at-least-node", [\
       ["npm:1.0.0", {\
         "packageLocation": "./.yarn/cache/at-least-node-npm-1.0.0-2b36e661fa-4c058baf6d.zip/node_modules/at-least-node/",\
@@ -4258,16 +4236,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["combined-stream", [\
-      ["npm:1.0.8", {\
-        "packageLocation": "./.yarn/cache/combined-stream-npm-1.0.8-dc14d4a63a-0dbb829577.zip/node_modules/combined-stream/",\
-        "packageDependencies": [\
-          ["combined-stream", "npm:1.0.8"],\
-          ["delayed-stream", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["commist", [\
       ["npm:1.1.0", {\
         "packageLocation": "./.yarn/cache/commist-npm-1.1.0-311d91a0a6-d21312ce6e.zip/node_modules/commist/",\
@@ -4602,15 +4570,6 @@ const RAW_RUNTIME_STATE =
           ["define-properties", "npm:1.2.1"],\
           ["has-property-descriptors", "npm:1.0.2"],\
           ["object-keys", "npm:1.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["delayed-stream", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "./.yarn/cache/delayed-stream-npm-1.0.0-c5a4c4cc02-d758899da0.zip/node_modules/delayed-stream/",\
-        "packageDependencies": [\
-          ["delayed-stream", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5506,20 +5465,6 @@ const RAW_RUNTIME_STATE =
           ["cross-spawn", "npm:7.0.6"],\
           ["foreground-child", "npm:3.3.1"],\
           ["signal-exit", "npm:4.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["form-data", [\
-      ["npm:4.0.6", {\
-        "packageLocation": "./.yarn/cache/form-data-npm-4.0.6-fb3ea14cf3-43947a77bf.zip/node_modules/form-data/",\
-        "packageDependencies": [\
-          ["asynckit", "npm:0.4.0"],\
-          ["combined-stream", "npm:1.0.8"],\
-          ["es-set-tostringtag", "npm:2.1.0"],\
-          ["form-data", "npm:4.0.6"],\
-          ["hasown", "npm:2.0.4"],\
-          ["mime-types", "npm:2.1.35"]\
         ],\
         "linkType": "HARD"\
       }]\
