@@ -17,15 +17,15 @@ function* checkDevicesState() {
   const devices: Device[] = yield select(getDeviceList)
   for (const device of devices) {
     try {
-      const { stdout, stderr } = sh.exec(
+      const { code, stdout, stderr } = sh.exec(
         `playactor check --ip ${device.address.address} --machine-friendly` +
           ` --timeout 15000 --connect-timeout 10000 --no-open-urls --no-auth` +
           ` -c ${credentialStoragePath}`,
         { silent: true, timeout: 15000 },
       )
 
-      if (stderr) {
-        throw new Error(stderr)
+      if (code > 1 && stderr) {
+          throw new Error(stderr)
       }
 
       if (!stdout) {
