@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "strict": false,
     "resolveJsonModule": true,
-    "noEmit": true,
+    "noEmit": true
   },
-  "exclude": ["node_modules", "dist", ".packaged"],
+  "exclude": ["node_modules", "dist", ".packaged"]
 }

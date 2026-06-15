@@ -1,5 +1,4 @@
 import createDebugger from "debug"
-import { stdout } from "process"
 import { getContext, put, select } from "redux-saga/effects"
 import sh from "shelljs"
 import { Settings, SETTINGS } from "../../services"
@@ -25,7 +24,7 @@ function* checkDevicesState() {
       )
 
       if (code > 1 && stderr) {
-          throw new Error(stderr)
+        throw new Error(stderr)
       }
 
       if (!stdout) {

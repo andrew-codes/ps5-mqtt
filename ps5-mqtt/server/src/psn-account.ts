@@ -1,5 +1,4 @@
 import * as psnApi from "psn-api"
-import fetch from "node-fetch"
 import createDebugger from "debug"
 import { createErrorLogger } from "./util/error-logger"
 
@@ -137,7 +136,7 @@ async function getAccountActivity({
         `Unable to retrieve PSN information. API response: "${response.status}:${response.statusText}"`,
       )
     } else {
-      const { basicPresence }: BasicPresenceResponse = await response.json()
+      const { basicPresence } = (await response.json()) as BasicPresenceResponse
 
       if (basicPresence?.gameTitleInfoList?.length > 0) {
         const [activeTitle] = basicPresence.gameTitleInfoList

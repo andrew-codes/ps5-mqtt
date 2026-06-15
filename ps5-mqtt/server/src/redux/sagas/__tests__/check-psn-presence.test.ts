@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-empty-function */
 import { runSaga } from "redux-saga"
 
 import { PsnAccount } from "../../../psn-account"
@@ -39,7 +37,7 @@ describe("Check PSN Presence saga", () => {
 
     await runSaga(
       {
-        dispatch: (_action) => {},
+        dispatch: () => {},
         getState: () =>
           <Partial<State>>{
             accounts: {

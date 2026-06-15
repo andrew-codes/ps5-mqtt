@@ -27,7 +27,11 @@ export default defineConfig({
             jsc: {
               parser: { syntax: "typescript", tsx: true },
               transform: {
-                react: { runtime: "classic", development: isDev, refresh: isDev },
+                react: {
+                  runtime: "classic",
+                  development: isDev,
+                  refresh: isDev,
+                },
               },
               target: "es2020",
             },
