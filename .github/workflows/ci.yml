@@ -26,7 +26,7 @@ jobs:
       name: ${{ steps.information.outputs.name }}
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: ⏭ Copy add-on files
         run: |
           cp add-ons/common/Dockerfile add-ons/ps5-mqtt-edge
@@ -34,7 +34,7 @@ jobs:
           cp add-ons/common/.dockerignore add-ons/ps5-mqtt-edge
       - name: 🚀 Run add-on information action
         id: information
-        uses: frenck/action-addon-information@v1.4
+        uses: frenck/action-addon-information@v1.4.2
         with:
           path: "./add-ons/ps5-mqtt-edge"
 
@@ -43,9 +43,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⤵ Check out repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -69,9 +69,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⤵ Check out repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -91,7 +91,7 @@ jobs:
       matrix: ${{ steps.matrix.outputs.matrix }}
     steps:
       - name: ⤵ Check out repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v6
 
       - name: 🧮 Get build matrix
         id: matrix
@@ -114,9 +114,9 @@ jobs:
 
     steps:
       - name: ⤵ Check out repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -203,9 +203,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⤵ Check out repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 

@@ -1,7 +1,7 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:3.21
 FROM $BUILD_FROM
 
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 ARG BUILD_VERSION
 
 RUN apk add --no-cache --virtual .build-dependencies \

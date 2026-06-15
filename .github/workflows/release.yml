@@ -34,11 +34,11 @@ jobs:
       version: ${{ steps.bump.outputs.version }}
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -58,7 +58,7 @@ jobs:
           cp docs/DOCS.md add-ons/ps5-mqtt/DOCS.md
 
       - name: 🙌 Commit version bump
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           branch: main
           commit_message: >-
@@ -71,11 +71,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -100,11 +100,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -124,7 +124,7 @@ jobs:
       matrix: ${{ steps.matrix.outputs.matrix }}
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
 
@@ -152,11 +152,11 @@ jobs:
       matrix: ${{ fromJSON(needs.init.outputs.matrix) }}
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -250,11 +250,11 @@ jobs:
       packages: write
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -268,13 +268,13 @@ jobs:
         run: yarn build
 
       - name: 🔧 Set up QEMU
-        uses: docker/setup-qemu-action@v3
+        uses: docker/setup-qemu-action@v4
 
       - name: 🔧 Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - name: 🔑 Log in to GitHub Container Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -302,11 +302,11 @@ jobs:
       contents: write
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 24.16.0
 
@@ -322,7 +322,7 @@ jobs:
         run: yarn update-changelog ${{ needs.version.outputs.version }}
 
       - name: 🙌 Commit updated changelog
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           branch: main
           commit_message: >-
@@ -330,7 +330,7 @@ jobs:
           file_pattern: add-ons/ps5-mqtt/CHANGELOG.md
 
       - name: 🚀 Create release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: v${{ needs.version.outputs.version }}
           name: v${{ needs.version.outputs.version }}
