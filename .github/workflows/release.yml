@@ -234,7 +234,7 @@ jobs:
             "${tag_args[@]}" \
             "${REGISTRY_PREFIX}/${BUILD_IMAGE_NAME}:${tags[0]}"
 
-          digest="$(jq -r '.["containerimage.descriptor"].digest' "${metadata_file}")"
+          digest="$(jq -r '.["containerimage.digest"] // .["containerimage.descriptor"].digest' "${metadata_file}")"
           cosign sign --yes "${REGISTRY_PREFIX}/${IMAGE_NAME}@${digest}"
 
   standalone:
