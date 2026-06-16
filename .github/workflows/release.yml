@@ -200,7 +200,7 @@ jobs:
 
   manifest:
     name: 📦 Publish multi-arch manifest
-    needs: [init, build]
+    needs: [version, init, build]
     runs-on: ubuntu-latest
     permissions:
       id-token: write
