@@ -231,8 +231,7 @@ jobs:
             "${tag_args[@]}" \
             "${REGISTRY_PREFIX}/${BUILD_IMAGE_NAME}:${tags[0]}"
 
-          digest="$(docker buildx imagetools inspect "${REGISTRY_PREFIX}/${IMAGE_NAME}:${tags[0]}" | awk '/^Digest:/{print $2; exit}')"
-          cosign sign --yes "${REGISTRY_PREFIX}/${IMAGE_NAME}@${digest}"
+          cosign sign --yes "${REGISTRY_PREFIX}/${IMAGE_NAME}:${tags[0]}"
 
   standalone:
     name: 🐳 Build & Publish standalone image
