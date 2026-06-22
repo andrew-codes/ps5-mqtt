@@ -138,7 +138,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:24.13.2"],\
           ["@types/shelljs", "npm:0.10.0"],\
           ["async-mqtt", "npm:2.6.3"],\
-          ["body-parser", "npm:2.2.2"],\
+          ["body-parser", "npm:2.3.0"],\
           ["concurrently", "npm:10.0.3"],\
           ["debug", "virtual:2ed0814e144e031e4d88e9e132d455f02399bfd8597541ff0fd6b26c3f576c48280865416cf6f9266947f53f58d49d755a71789ebfa2faf61c00a4985b021ce1#npm:4.4.3"],\
           ["dotenv", "npm:17.4.2"],\
@@ -3866,12 +3866,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.2.2", {\
-        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.2-2aa532c1f4-95a830a003.zip/node_modules/body-parser/",\
+      ["npm:2.3.0", {\
+        "packageLocation": "./.yarn/cache/body-parser-npm-2.3.0-c6f573225c-2a8fbbdc47.zip/node_modules/body-parser/",\
         "packageDependencies": [\
-          ["body-parser", "npm:2.2.2"],\
+          ["body-parser", "npm:2.3.0"],\
           ["bytes", "npm:3.1.2"],\
-          ["content-type", "npm:1.0.5"],\
+          ["content-type", "npm:2.0.0"],\
           ["debug", "virtual:2ed0814e144e031e4d88e9e132d455f02399bfd8597541ff0fd6b26c3f576c48280865416cf6f9266947f53f58d49d755a71789ebfa2faf61c00a4985b021ce1#npm:4.4.3"],\
           ["http-errors", "npm:2.0.1"],\
           ["iconv-lite", "npm:0.7.2"],\
